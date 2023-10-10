@@ -30,10 +30,10 @@ const Header1 = () => {
             </div>
             <div className={mobile ? "flex flex-col absolute w-full bg-slate-300/75 h-full top-0 gap-2 px-2" : "md:flex hidden gap-2 px-2"}>
               <AiOutlineCloseCircle onClick={closeMobile} className='absolute right-3 mt-1 md:hidden transition'/>
-              <NavLink to="/" className="text-gray-900 hover:text-sky-400">
+              <NavLink to="/" className="text-gray-900 hover:text-sky-400 md:mt-2">
                 Flights
               </NavLink>
-              <NavLink to="/about" className="text-gray-900 hover:text-sky-400">
+              <NavLink to="/about" className="text-gray-900 hover:text-sky-400 md:mt-2">
                 About
               </NavLink>
             </div>
