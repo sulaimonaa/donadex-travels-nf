@@ -1,8 +1,11 @@
 import React from "react";
 import { BiSolidPlaneTakeOff } from 'react-icons/bi';
+import RoundTrip from "./RoundTrip";
+import OneWay from "./OneWay";
 
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
+
   return (
     <>  
       <div className="flex flex-wrap">
@@ -54,10 +57,10 @@ const Tabs = () => {
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  
+                  <RoundTrip />
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  
+                  <OneWay />
                 </div>
               </div>
             </div>
